@@ -74,5 +74,8 @@ gem 'font-awesome-sass', '~> 5.4.1'
 # Use YouTube API
 gem 'google-api-client', '~> 0.11'
 
+# Use Line API
+gem 'line-bot-api'
+
 # Use .env
 gem 'dotenv-rails'
