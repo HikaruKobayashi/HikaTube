@@ -72,7 +72,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'font-awesome-sass', '~> 5.4.1'
 
 # Use YouTube API
-gem 'google-api-client', '~> 0.11'
+gem 'google-api-client', '0.9.20', require: 'google/apis/youtube_v3'
 
 # Use Line API
 gem 'line-bot-api'
