@@ -6,9 +6,10 @@
   .row
     - @youtube_data.items.each do |item|
       - snippet = item.snippet
-      %p= snippet.title
+      .col-12
+        %h2= snippet.title
+      .col-12
+        %iframe{allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen: "", frameborder: "0", src: "https://www.youtube.com/embed/#{item.id.video_id}"}
       %p
         = snippet.published_at
         = snippet.channel_title
-      .col-12
-        %iframe{allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen: "", frameborder: "0", src: "https://www.youtube.com/embed/#{item.id.video_id}"}
